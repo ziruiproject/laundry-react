@@ -1,10 +1,3 @@
-import Navbar from './components/Navbar'
-import Home1 from './components/Home1';
-import Placeholder from './components/Placeholder'
-import LayananKami from './components/LayananKami';
-import Promobulan from './components/Promobulan';
-import Review from './components/Riew'
-import Footer from './components/Footer'
 const Home = () => {
   return (
     <>
@@ -20,14 +13,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <Navbar />
-    <Home/>
-    <Home1/>
-    <Placeholder/>
-    <LayananKami/>
-    <Promobulan/>
-    <Review/>
-    <Footer/>
+
     </>
   );
 };
