@@ -1,9 +1,9 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
 
 const Layanan = () => {
   return (
-    <div>ini Layanan</div>
+    <div>Layanan</div>
   )
 }
 
