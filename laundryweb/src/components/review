@@ -1,0 +1,61 @@
+// /* eslint-disable no-unused-vars */
+// import React, { useState } from 'react';
+// import Slider from 'react-slick';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
+// import { LayananKami } from './data';
+// import fitur1 from './assets/fitur1.png'; // Jika digunakan, pastikan ini digunakan dengan benar
+
+// function SlickReview() {
+//   const [defaultImage, setDefaultImage] = useState({});
+
+//   const settings = {
+//     dots: true,
+//     infinite: false,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     initialSlide: 0,
+//     responsive: [
+//       // ... setting responsif yang sama seperti sebelumnya
+//     ],
+//   };
+
+//   const handleErrorImage = (data) => {
+//     setDefaultImage((prev) => ({
+//       ...prev,
+//       [data.target.alt]: data.target.alt,
+//       linkDefault: fitur1, // Pastikan variabel fitur1 sudah digunakan dengan benar
+//     }));
+//   };
+
+//   return (
+//     <div className="App">
+//       <Slider {...settings}>
+//         {LayananKami.map((item) => (
+//           <div className="card" key={item.id}> {/* Tambahkan key untuk setiap elemen di dalam map */}
+//             <div className="card-top">
+//               <img
+//                 src={
+//                   defaultImage[item.title] === item.title
+//                     ? defaultImage.linkDefault
+//                     : item.linkImg // Pastikan linkImg sudah benar
+//                 }
+//                 alt={item.title}
+//                 onError={handleErrorImage}
+//               />
+//               <h1>{item.title}</h1>
+//             </div>
+//             <div className="card-bottom">
+//               <h3>{item.price}</h3>
+//               <span className="category">{item.category}</span>
+//             </div>
+//           </div>
+//         ))}
+//       </Slider>
+//     </div>
+//   );
+// }
+
+// export default SlickReview;

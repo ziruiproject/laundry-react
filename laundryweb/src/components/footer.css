@@ -1,0 +1,107 @@
+.section_padding{
+    padding: 4rem 4rem;
+}
+
+/* editing bagian footer */
+.footer{
+    background-color: #327094;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+
+/* headline bagian navigasi */
+.sb_footer-links h1 {
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Menempatkan elemen h1 di pojok kiri dan turun ke bawah */
+    flex-direction: column;
+    color: white;
+    
+  }
+  
+/* list bagian navigasi */
+.sb_footer-links a {
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Menempatkan elemen h1 di pojok kiri dan turun ke bawah */
+    flex-direction: column;
+    color: white;
+    font-size: 14pt;
+    text-decoration: none;
+  }
+/* hover bagian navigasi */
+.sb_footer-links a:hover {
+    color: #81e6d9; /* Ganti dengan warna atau nilai hexa yang sesuai */
+  }
+
+/* bagian headline layanan dan kontak */
+.sb_footer-links_div {
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+    font-size: 18pt;
+    flex: 1;
+    width: auto;
+    align-items: flex-start;
+}
+
+/* editing sosmed pada kontak kami */
+.sb_footer-links_div a {
+  display: row;
+  justify-content: flex-end; /* Membuat konten berada di sebelah kanan */
+  flex-direction: column;
+  color: white;
+  font-size: 25pt;
+  text-decoration: none;
+  margin-top: 1rem;
+  flex-direction: row;
+  }
+/* hover kontak kami */
+.sb_footer-links_div a:hover {
+    color: #81e6d9; /* Ganti dengan warna atau nilai hexa yang sesuai */
+  }
+
+
+/* tulisan bagian layanan kami */
+.sb_footer-links_div p{
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Menempatkan elemen h1 di pojok kiri dan turun ke bawah */
+    flex-direction: column;
+    color: white;
+    font-size: 14pt;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+/* hover list layanan kami */
+.sb_footer-links_div p:hover {
+    color: #81e6d9; /* Ganti dengan warna atau nilai hexa yang sesuai */
+  }
+
+/* bagian copyright */
+.sb_footer-copyright{
+    font-size: 12pt;
+    line-height: 15px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+    
+

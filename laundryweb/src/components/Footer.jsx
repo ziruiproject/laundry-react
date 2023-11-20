@@ -1,0 +1,65 @@
+import React from 'react';
+import logo from "../assets/logo.png";
+import footer from './footer.css'
+const Footer = () => {
+  return (
+    <div className='footer'>
+      <div className='sb_footer section_padding'>
+        <div className='sb_footer-links'>
+          <div className='sb_footer-links-div'></div>
+          <h1>Navigasi</h1>
+          <a href='/Home'>
+            <p>Home</p>
+          </a>
+          <a href='/Blog'>
+            <p>Blog</p>
+          </a>
+          <a href='/Layanan'>
+            <p>Layanan</p>
+          </a>
+          <a href='/AboutUs'>
+            <p>About Us</p>
+          </a>
+        </div>
+        <div className='sb_footer-links_div'>
+          <h2>Layanan Kami</h2>
+          <a href='/CuciKering'>
+            <p>Cuci Kering</p>
+          </a>
+          <a href='/CuciSetrika'>
+            <p>Cuci Setrika</p>
+          </a>
+          <a href='/CuciKilat'>
+            <p>Cuci Kilat</p>
+          </a>
+        </div>
+        <div className='sb_footer-links_div'>
+          <h1>Kontak Kami</h1>
+          <a href='/CuciKilat'>
+          <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href='/CuciKilat'>
+           <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href='/CuciKilat'>
+          <ion-icon name="mail-outline"></ion-icon>
+          </a>
+          <a href='/CuciKilat'>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <hr></hr>
+      <div className='sb_footer-below'>
+        <div className='sb_footer-copyright'>
+          <p>
+          Copyright@2023LaundryEaseDevTeam
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
+

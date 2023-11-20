@@ -1,0 +1,73 @@
+// /* eslint-disable no-unused-vars */
+// import React from 'react'
+// import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
+// import cucikering from '../assets/cucikering.png';
+// import cucisetrika from '../assets/cucisetrika.png';
+// import cucikilat from '../assets/cucikilat.png';
+
+// const LayananKami = () => {
+//   return (
+//     <div>
+//       <h1 className=" justify-center text-center font-bold text-[300px]" style={{ color: '#4784A8', fontSize: '24pt', fontWeight: 'bold', marginTop: '200px' }}>Layanan Kami</h1>
+//       <p className=" justify-center text-center" style={{ fontSize: '14pt', fontWeight: 'normal', marginTop: '20px' }}>Silahkan Pilih layanan yang Di butuhkan</p>
+//       <div className="d-flex justify-content-around" style={{ marginTop: '70px' }}>
+//       {/* layanan 1 */}
+//       <Card style={{ width: '18rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}> {/* Tambahkan margin di sini */}
+//       <div style={{ display: 'flex', justifyContent: 'center', }}>
+//       <Card.Img variant="top" src={cucikering} alt="CuciKering"  style={{
+//                 width: '20rem',
+//                 height: '200px',
+//                 objectFit: 'cover',
+//                 borderRadius: '20px 20px 0 0',
+//                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' 
+//               }} />
+//         </div>
+//         <Card.Body style={{ textAlign: 'center' }}>
+//           <Card.Title style={{ fontWeight: 'bold' }}>Cuci Kering</Card.Title>
+//           <Button variant="primary">Pilih</Button>
+//         </Card.Body>
+//       </Card>
+
+
+//       {/* kelebihan 2 */}
+//       <Card style={{ width: '18rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}> {/* Tambahkan margin di sini */}
+//       <div style={{ display: 'flex', justifyContent: 'center', }}>
+//       <Card.Img variant="top" src={cucisetrika} alt="cucisetrika"  style={{
+//                 width: '20rem',
+//                 height: '200px',
+//                 objectFit: 'cover',
+//                 borderRadius: '20px 20px 0 0',
+//                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' 
+//               }} />
+//         </div>
+//         <Card.Body style={{ textAlign: 'center' }}>
+//           <Card.Title style={{ fontWeight: 'bold' }}>Cuci Setrika</Card.Title>
+//           <Button variant="primary">Pilih</Button>
+//         </Card.Body>
+//       </Card>
+
+//       {/* kelebihan 3 */}
+//       <Card style={{ width: '18rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}> {/* Tambahkan margin di sini */}
+//       <div style={{ display: 'flex', justifyContent: 'center', }}>
+//       <Card.Img variant="top" src={cucikilat} alt="cucikilat"  style={{
+//                 width: '20rem',
+//                 height: '200px',
+//                 objectFit: 'cover',
+//                 borderRadius: '20px 20px 0 0',
+//                 boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)' 
+//               }} />
+//         </div>
+//         <Card.Body style={{ textAlign: 'center' }}>
+//           <Card.Title style={{ fontWeight: 'bold' }}>Cuci Kilat</Card.Title>
+//           <Button variant="primary">Pilih</Button>
+//         </Card.Body>
+//       </Card>
+//     </div>
+    
+//     </div>
+//   );
+// }
+
+
+// export default LayananKami
