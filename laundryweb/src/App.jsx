@@ -8,7 +8,7 @@ import Placeholder from './components/Placeholder'
 import LayananKami from './components/LayananKami';
 import Promobulan from './components/Promobulan';
 import Review from './components/Riew'
-import Footer from './components/Footer'
+import Footer from './components/Footer';
 // import SlickReview from './components/SlickReview';
 
 
@@ -23,7 +23,6 @@ const App = () => {
     <Promobulan/>
     <Review/>
     <Footer/>
-    
     {/* <SlickReview/> */}
      </>
   )
