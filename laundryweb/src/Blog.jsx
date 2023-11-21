@@ -1,9 +1,15 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
-
+import BlogInformasi from './components/BlogInformasi'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer';
 const Blog = () => {
   return (
-    <div>ini Blog</div>
+    <>
+    <Navbar />
+    <h1>ini blog</h1>
+    <Footer/>
+    </>
   )
 }
 

@@ -1,15 +1,15 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
-import { Link } from 'react-router-dom'
-
+import BlogInformasi from './components/BlogInformasi'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer';
 const AboutUS = () => {
   return (
-  <div>
-    {""}
-    about
-    <Link to="/home">pindah ke home disini</Link>
-    </div>
+    <>
+    <Navbar />
+    <h1>ini About Us</h1>
+    <Footer/>
+    </>
   )
 }
-
-export default AboutUS
+export default AboutUS 
