@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import logo from "../assets/logo.png";
-import footer from './footer.css';
 import GooglePlay from '../assets/GooglePlay.png';
+import footer from './footer.css';
 
 const Footer = () => {
   return (

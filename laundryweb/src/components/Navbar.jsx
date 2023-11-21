@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-// import { UseNavigate } from "react-router-dom";
+
 
 const CustomNavbar = () => {
   let Links = [
@@ -47,9 +47,10 @@ const CustomNavbar = () => {
                   </NavDropdown>
                 ) : (
                   <Nav.Link
-                    href={link.link}
-                    className="text-white"
-                    style={{ color: 'white' }}
+                    href={link.link} 
+                    className="text-white navbar-link"
+                    style={{ color: 'cyan' 
+                    ,transition: 'color 0.3s'}}
                     onMouseEnter={(e) => {
                       e.target.style.color = "cyan";
                     }}
