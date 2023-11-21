@@ -9,7 +9,7 @@ import cucikilat from '../assets/cucikilat.png';
 const LayananKami = () => {
   return (
     <div>
-      <h1 className="text-center font-bold text-6xl" style={{ color: '#4784A8', marginTop: '200px' }}>Layanan Kami</h1>
+      <h1 className="text-center font-bold text-6xl" style={{ color: 'black', marginTop: '200px' }}>Layanan Kami</h1>
       <p className="text-center text-lg" style={{ marginTop: '20px' }}>Silahkan Pilih layanan yang Dibutuhkan</p>
       <div className="d-flex justify-content-around align-items-center" style={{ marginTop: '70px' }}>
             {/* layanan cuci kering*/}

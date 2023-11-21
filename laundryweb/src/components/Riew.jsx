@@ -10,7 +10,7 @@ const Riew = () => {
       <h1
         className=" justify-center text-center font-bold text-[300px]"
         style={{
-          color: "#4784A8",
+          color: "black",
           fontSize: "24pt",
           fontWeight: "bold",
           marginTop: "200px",

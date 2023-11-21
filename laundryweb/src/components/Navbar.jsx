@@ -8,13 +8,13 @@ import Button from 'react-bootstrap/Button';
 
 const CustomNavbar = () => {
   let Links = [
-    { name: "Home", link: "/home" },
-    { name: "Blog", link: "/blog", dropdown: [
+    { name: "Beranda", link: "/home" },
+    { name: "Artikel", link: "/blog", dropdown: [
       { subName: "Informasi", subLink: "/Informasi" },
       { subName: "FA&Q", subLink: "/FAQ" }
     ] },
     { name: "Layanan", link: "/layanan" },
-    { name: "About Us", link: "/aboutus" },
+    { name: "Tentang Kami", link: "/aboutus" },
   ];
 
   return (

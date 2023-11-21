@@ -8,7 +8,7 @@ import fitur3 from "../assets/fitur3.png";
 const Home1 = () => {
   return (
     <div>
-     <h1 className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: '#4784A8', fontSize: '35pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
+     <h1 className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: 'black', fontSize: '35pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
      <p className="text-center flex justify-center items-center" style={{ marginTop: "1%", fontSize: '16pt', fontWeight: 'normal'}}>Kami bekerja sama dengan penyedia jasa laundry yang telah teruji dan terpercaya, memastikan kualitas layanan yang dijamin untuk setiap pengguna</p>
       {/* bagian card kelebihan kami */}
       <div

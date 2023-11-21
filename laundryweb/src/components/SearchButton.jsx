@@ -1,9 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-
 
 
 const FAQ = () => {
@@ -11,7 +8,6 @@ const FAQ = () => {
 
   return (
     <div>
-      <Navbar />
       <div className='Search' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '70px' }}>
         <h1>Frequently asked questions</h1>
         <div className="form-wrapper" style={{ display: 'flex', alignItems: 'center' }}>
@@ -35,9 +31,9 @@ const FAQ = () => {
          <Button className="ml-2 text-white" style={{ marginTop: '70px', width: '50px', height: '50px', backgroundColor: '#327094', transition: 'background-color 0.5s', boxShadow: '2px 2px 4px rgba(1, 1, 1, 1.2)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
              <ion-icon name="search-outline" style={{ width: '20px', height: '20px', fontWeight: 'bold', display: 'block' }}></ion-icon>
          </Button>
+
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

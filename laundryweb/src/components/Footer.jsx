@@ -14,10 +14,10 @@ const Footer = () => {
           </div>
           <div className='sb_footer_nav'>
           <h1>Navigasi</h1>
-            <a href='/Home'><p>Home</p></a>
-            <a href='/Blog'><p>Blog</p></a>
+            <a href='/Home'><p>Beranda</p></a>
+            <a href='/Blog'><p>Artikel</p></a>
             <a href='/Layanan'><p>Layanan</p></a>
-            <a href='/AboutUs'><p>AboutUs</p></a>
+            <a href='/AboutUs'><p>Tentang Kami</p></a>
           </div>
         </div>
         <div className='sb_footer-links_div'>
