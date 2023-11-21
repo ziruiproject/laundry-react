@@ -37,10 +37,10 @@ flex-direction: column;
 }
 
 .logo-container img {
-  width: 200px; 
+  width: 300px; 
   height: auto; 
   margin-left: 20%; 
-  margin-top: 50%;
+  margin-top: 10px;
 }
 
 
@@ -55,8 +55,7 @@ text-decoration: none;
 .sb_footer_nav{
   margin-left: 210%;
     position: relative;
-    left: 50px; 
-    top: -222px; 
+    top: -290px; 
   }
 
   /* editing bagian headline navigasi */

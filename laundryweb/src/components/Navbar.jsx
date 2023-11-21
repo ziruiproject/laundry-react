@@ -6,24 +6,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 
-
 const CustomNavbar = () => {
   let Links = [
     { name: "Home", link: "/home" },
     { name: "Blog", link: "/blog", dropdown: [
-      { subName: "Informasi", subLink: "/blog/informasi" },
-      { subName: "FA&Q", subLink: "/blog/category2" }
+      { subName: "Informasi", subLink: "/Informasi" },
+      { subName: "FA&Q", subLink: "/FAQ" }
     ] },
     { name: "Layanan", link: "/layanan" },
     { name: "About Us", link: "/aboutus" },
   ];
 
   return (
-    <Navbar expand="lg" style={{ backgroundColor: '#327094', height: '100px' }}>
+    <Navbar expand="lg" style={{ color:'white', backgroundColor: '#327094', height: '100px' }}>
       <Container fluid>
         <div className="flex items-center cursor-pointer font-[poppins] text-white">
-          <img src={logo} alt="Logo" className="h-16 mr-2" style={{ marginLeft:'20px'}}/>
-          <div className="font-medium ml-3 text-2xl">ease laundry</div>
+          <img src={logo} alt="Logo" className="h-16 mr-2" style={{ height: '150px', marginLeft: '30px' }} />
         </div>
         <Navbar.Toggle aria-controls="navbar-dark-example" />
         <Navbar.Collapse id="navbar-dark-example">
@@ -34,12 +32,14 @@ const CustomNavbar = () => {
                   <NavDropdown
                     title={link.name}
                     id={link.name}
-                    style={{ backgroundColor: '#327094' }}
+                    menuVariant="primary"
+                    style={{ color: 'white' }} // properti style untuk NavDropdown
                   >
                     {link.dropdown.map((subLink) => (
                       <NavDropdown.Item
                         key={subLink.subName}
                         href={subLink.subLink}
+                        style={{ color: 'black' }} // Ubah warna teks F&aQ menjadi hitam
                       >
                         {subLink.subName}
                       </NavDropdown.Item>
@@ -49,8 +49,7 @@ const CustomNavbar = () => {
                   <Nav.Link
                     href={link.link} 
                     className="text-white navbar-link"
-                    style={{ color: 'cyan' 
-                    ,transition: 'color 0.3s'}}
+                    style={{ color: 'black', transition: 'color 0.3s' }} // Ubah warna teks Layanan menjadi hitam
                     onMouseEnter={(e) => {
                       e.target.style.color = "cyan";
                     }}
