@@ -1,18 +1,134 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React from "react";
+import Card from "react-bootstrap/Card";
+import fitur1 from "../assets/fitur1.png";
+import fitur2 from "../assets/fitur2.png";
+import fitur3 from "../assets/fitur3.png";
 
 const Home1 = () => {
   return (
     <div>
-    <div className="h-screen flex justify-center ">
-      <div className="max-w-[700px] text-center">
-        <div className="my-10">
-          <h1 className="font-bold text-[700px] " style={{ color: '#4784A8', fontSize: '28pt', fontWeight: 'bold', marginTop: '200px' }}>Alasan Mempercayai Layanan Kami</h1>
-          <p className="text-text max-w-[700px]" style={{ fontSize: '14pt', fontWeight: 'normal', marginTop: '10px' }}>Kami bekerja sama dengan penyedia jasa laundry yang telah teruji dan terpercaya, memastikan kualitas layanan yang dijamin untuk setiap pengguna.</p>
-        </div>
+     <h1 className="text-center flex justify-center items-center" style={{ marginTop: "10%", color: '#4784A8', fontSize: '35pt', fontWeight: 'bold' }}>Alasan mengapa memilih kami</h1>
+     <p className="text-center flex justify-center items-center" style={{ marginTop: "1%", fontSize: '16pt', fontWeight: 'normal'}}>Kami bekerja sama dengan penyedia jasa laundry yang telah teruji dan terpercaya, memastikan kualitas layanan yang dijamin untuk setiap pengguna</p>
+      {/* bagian card kelebihan kami */}
+      <div
+        className="d-flex justify-content-around"
+        style={{ marginTop: "5%" }}>
+        {/* layanan 1 */}
+        <Card
+          style={{
+            width: "18rem",
+            boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+            borderRadius: "20px",
+          }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "20px",
+            }}>
+            <Card.Img
+              variant="top"
+              src={fitur1}
+              alt="Fitur1"
+              style={{
+                width: "200px",
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "20px",
+              }}/>
+          </div>
+          <Card.Body style={{ textAlign: "center" }}>
+            <Card.Title style={{ fontWeight: "bold" }}>
+              Fitur Kemudahan Penggunaan
+            </Card.Title>
+            <Card.Text>
+              Platform kami di desain untuk memudahkan pengguna dalam melakukan
+              pemesanan, pembayaran, serta melacak status laundry secara efisien
+              dan cepat.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        {/* kelebihan 2 */}
+        <Card
+          style={{
+            width: "18rem",
+            boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+            borderRadius: "20px",
+            margin: "0 10px",
+          }}>
+          {" "}
+          {/* Tambahkan margin di sini */}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "20px",
+            }}>
+            <Card.Img
+              variant="top"
+              src={fitur2}
+              alt="Fitur1"
+              style={{
+                width: "200px",
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "20px",
+              }}/>
+          </div>
+          <Card.Body style={{ textAlign: "center" }}>
+            <Card.Title style={{ fontWeight: "bold" }}>
+              Pilihan Fleksibilitas
+            </Card.Title>
+            <Card.Text>
+              Menyediakan beragam opsi layanan laundry, termasuk jenis layanan,
+              waktu pengantaran, dan pilihan pembayaran yang dapat disesuaikan
+              dengan kebutuhan pengguna.
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        {/* kelebihan 3 */}
+        <Card
+          style={{
+            width: "18rem",
+            boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)",
+            borderRadius: "20px",
+            margin: "0 10px",
+          }}>
+          {" "}
+          {/* Tambahkan margin di sini */}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "20px",
+            }}>
+            <Card.Img
+              variant="top"
+              src={fitur3}
+              alt="Fitur1"
+              style={{
+                width: "200px",
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "20px",
+              }}/>
+          </div>
+          <Card.Body style={{ textAlign: "center" }}>
+            <Card.Title style={{ fontWeight: "bold" }}>
+              Kemitraan dengan Penyedia Laundry Terpercaya
+            </Card.Title>
+            <Card.Text>
+              Kami bekerja sama dengan penyedia jasa laundry yang telah teruji
+              dan terpercaya, memastikan kualitas layanan yang dijamin untuk
+              setiap pengguna.
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
     </div>
-    </div>    
   );
 };
 

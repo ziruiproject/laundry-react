@@ -12,7 +12,6 @@ const LayananKami = () => {
       <h1 className="text-center font-bold text-6xl" style={{ color: '#4784A8', marginTop: '200px' }}>Layanan Kami</h1>
       <p className="text-center text-lg" style={{ marginTop: '20px' }}>Silahkan Pilih layanan yang Dibutuhkan</p>
       <div className="d-flex justify-content-around align-items-center" style={{ marginTop: '70px' }}>
-        
             {/* layanan cuci kering*/}
             <Card style={{ width: '30rem', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)', borderRadius: '20px', margin: '0 10px' }}>
           <div style={{ display: 'flex', justifyContent: 'center' }}>

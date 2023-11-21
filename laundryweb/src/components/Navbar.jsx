@@ -1,64 +1,79 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import logo from "../assets/logo.png";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 
-const Navbar = () => {
+const CustomNavbar = () => {
+
+
   let Links = [
     { name: "Home", link: "/home" },
-    { name: "Blog", link: "/blog" },
+    { name: "Blog", link: "/blog", dropdown: [
+      { subName: "Informasi", subLink: "/blog/category1" },
+      { subName: "FA&Q", subLink: "/blog/category2" }
+    ] },
     { name: "Layanan", link: "/layanan" },
     { name: "About Us", link: "/aboutus" },
   ];
 
   return (
-    <div className="w-full top-3 left-0" style={{ boxShadow: "0 2px 4px 0 rgba(0,0,0,0.1)" }}>
-      <div
-        className="md:flex justify-between py-4 md:px-10 px-7"
-        style={{ backgroundColor: "rgb(50, 112, 148)" }}
-      >
-        {/* Tambahkan gambar di samping tulisan "ease laundry" */}
+    <Navbar  expand="lg" style={{ backgroundColor: '#327094', height: '100px' }}>
+    <Container fluid>
         <div className="flex items-center cursor-pointer font-[poppins] text-white">
-          <img src={logo} alt="Logo" className="h-16 mr-2" />
+          <img src={logo} alt="Logo" className="h-16 mr-2" style={{ marginLeft:'20px'}}/>
           <div className="font-medium ml-3 text-2xl">ease laundry</div>
         </div>
-        <div className="flex items-center">
-          {/* tempat editing tulisan di navbar */}
-          <ul
-            className="flex space-x-4 text-white ml-9 md:ml-0 md:space-x-9 text-sm md:text-md hidden md:flex"
-            style={{ fontSize: "16pt", fontWeight: "normal" }}
-          >
+        <Navbar.Toggle aria-controls="navbar-dark-example" />
+        <Navbar.Collapse id="navbar-dark-example">
+        <Nav className="ml-auto" style={{ gap: '40px', fontSize:'16pt'}}>
             {Links.map((link) => (
-              <li key={link.name} className="text-x1 flex gap-x-4">
-                <a
-                  href={link.link}
-                  className="duration-500"
-                  style={{
-                    color: "white",
-                    textDecoration: "none",
-                    transition: "color 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.target.style.color = "cyan";
-                  }} // atur warna saat hover
-                  onMouseLeave={(e) => {
-                    e.target.style.color = "white";
-                  }} // kembalikan ke warna putih saat tidak dihover
-                >
-                  {link.name}
-                </a>
-              </li>
+              <React.Fragment key={link.name}>
+                {link.dropdown ? (
+                  <NavDropdown
+                    title={link.name}
+                    id={link.name}
+                    style={{ backgroundColor: '#327094' }}
+                  >
+                    {link.dropdown.map((subLink) => (
+                      <NavDropdown.Item
+                        key={subLink.subName}
+                        href={subLink.subLink}
+                      >
+                        {subLink.subName}
+                      </NavDropdown.Item>
+                    ))}
+                  </NavDropdown>
+                ) : (
+                  <Nav.Link
+                    href={link.link}
+                    ClassName="text-white"
+                    style={{ color: 'white' }}
+                    onMouseEnter={(e) => {
+                      e.target.style.color = "cyan";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.color = "white";
+                    }}
+                  >
+                    {link.name}
+                  </Nav.Link>
+                )}
+              </React.Fragment>
             ))}
-          </ul>
-          <span className="text-3xl text-white ml-6 md:ml-20 mr-6 md:mr-10 cursor-pointer">
-            <ion-icon name="notifications-outline"></ion-icon>
-          </span>
-          <button className="text-cyan-700 font-[poppins] py-2.5 px-6 rounded-[20px] ml-2 md:ml-4 bg-cyan-100 hover:bg-cyan-300 transition duration-500">
-            masuk
-          </button>
-        </div>
-      </div>
-    </div>
+           <Nav.Link className="text-white">
+            <ion-icon name="notifications-outline" style={{ fontSize: '24pt' }}></ion-icon>
+            </Nav.Link>
+            <Button variant="outline-info" className="ml-2 text-white" style={{ marginRight:'20px', borderColor: 'white' }}>
+              Masuk
+            </Button>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default CustomNavbar;

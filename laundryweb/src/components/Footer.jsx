@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import logo from "../assets/logo.png";
 import footer from './footer.css';

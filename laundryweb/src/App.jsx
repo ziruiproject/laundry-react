@@ -4,7 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar'
 import Home from './Home';
 import Home1 from './components/Home1';
-import Placeholder from './components/Placeholder'
+
 import LayananKami from './components/LayananKami';
 import Promobulan from './components/Promobulan';
 import Review from './components/Riew'
@@ -18,7 +18,7 @@ const App = () => {
     <Navbar />
     <Home/>
     <Home1/>
-    <Placeholder/>
+   
     <LayananKami/>
     <Promobulan/>
     <Review/>
