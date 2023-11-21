@@ -5,14 +5,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
+// import { UseNavigate } from "react-router-dom";
 
 const CustomNavbar = () => {
-
-
   let Links = [
     { name: "Home", link: "/home" },
     { name: "Blog", link: "/blog", dropdown: [
-      { subName: "Informasi", subLink: "/blog/category1" },
+      { subName: "Informasi", subLink: "/blog/informasi" },
       { subName: "FA&Q", subLink: "/blog/category2" }
     ] },
     { name: "Layanan", link: "/layanan" },
@@ -20,15 +19,15 @@ const CustomNavbar = () => {
   ];
 
   return (
-    <Navbar  expand="lg" style={{ backgroundColor: '#327094', height: '100px' }}>
-    <Container fluid>
+    <Navbar expand="lg" style={{ backgroundColor: '#327094', height: '100px' }}>
+      <Container fluid>
         <div className="flex items-center cursor-pointer font-[poppins] text-white">
           <img src={logo} alt="Logo" className="h-16 mr-2" style={{ marginLeft:'20px'}}/>
           <div className="font-medium ml-3 text-2xl">ease laundry</div>
         </div>
         <Navbar.Toggle aria-controls="navbar-dark-example" />
         <Navbar.Collapse id="navbar-dark-example">
-        <Nav className="ml-auto" style={{ gap: '40px', fontSize:'16pt'}}>
+          <Nav className="ml-auto" style={{ gap: '40px', fontSize:'16pt'}}>
             {Links.map((link) => (
               <React.Fragment key={link.name}>
                 {link.dropdown ? (
@@ -49,7 +48,7 @@ const CustomNavbar = () => {
                 ) : (
                   <Nav.Link
                     href={link.link}
-                    ClassName="text-white"
+                    className="text-white"
                     style={{ color: 'white' }}
                     onMouseEnter={(e) => {
                       e.target.style.color = "cyan";
@@ -63,8 +62,8 @@ const CustomNavbar = () => {
                 )}
               </React.Fragment>
             ))}
-           <Nav.Link className="text-white">
-            <ion-icon name="notifications-outline" style={{ fontSize: '24pt' }}></ion-icon>
+            <Nav.Link className="text-white">
+              <ion-icon name="notifications-outline" style={{ fontSize: '24pt' }}></ion-icon>
             </Nav.Link>
             <Button variant="outline-info" className="ml-2 text-white" style={{ marginRight:'20px', borderColor: 'white' }}>
               Masuk
