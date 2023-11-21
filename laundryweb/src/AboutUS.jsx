@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import BlogInformasi from './components/BlogInformasi'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer';
+import Footer from './components/Footer'
 const AboutUS = () => {
   return (
     <>
-    <Navbar />
-    <h1>ini About Us</h1>
+    <Navbar/>
+    
     <Footer/>
     </>
   )
