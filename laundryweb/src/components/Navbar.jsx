@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
 
+
 const CustomNavbar = () => {
   let Links = [
     { name: "Beranda", link: "/home" },

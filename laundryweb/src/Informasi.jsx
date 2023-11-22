@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { dataDigitalBestSeller } from './data/Bloginfo';
-import './informasi.css';
+import './Informasi.css';
 import {Link} from 'react-router-dom';
 import Footer from './components/Footer';
 import Promobulan from './components/Promobulan'; 
@@ -55,19 +55,31 @@ function Informasi() {
       </div>
       <div className='App'>
       <Slider {...settings}>
-      {dataDigitalBestSeller.map((item, index) => (
-        <div className='card' key={index}>
-          <div className='card-top'>
-            <img src={item.Img} alt={item.title}/>
-            <h1>{item.title}</h1>
-          </div>
-          <div className='card-bottom'>
-                <h3>{item.capt}</h3>
-                <Link to="/Artikel1">{item.category}</Link>
-              </div>
-        </div>
-      ))}
-      </Slider>
+  {dataDigitalBestSeller.map((item) => (
+    <div className='card' key={item.id}>
+      <div className='card-top'>
+        <img src={item.Img} alt={item.title}/>
+        <h1>{item.title}</h1>
+      </div>
+      <div className='card-bottom'>
+        <h3>{item.capt}</h3>
+        {/* Tautan ke artikel kecuali untuk id: 2 dan id: 3 */}
+        {(item.id !== 2 && item.id !== 3) && (
+          <Link to={`/Artikel${item.id}`}>{item.category}</Link>
+        )}
+        {/* Tautan ke artikel 2 hanya pada item dengan id: 2 */}
+        {item.id === 2 && (
+          <Link to={`/Artikel2`}>{item.category}</Link>
+        )}
+        {/* Tautan khusus ke artikel 3 hanya pada item dengan id: 3 */}
+        {item.id === 3 && (
+          <Link to={`/Artikel3`}>{item.category}</Link>
+        )}
+      </div>
+    </div>
+  ))}
+</Slider>
+
       <Promobulan/>
       </div>
       <Footer/>

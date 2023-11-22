@@ -40,7 +40,7 @@ export const dataDigitalBestSeller = [
     {
         id: 5,
         Img: informasi5, 
-        title: 'Tips Cuci Tas Ransel Mudah',
+        title: 'Tips Cuci Tas Ransel Mudah Tanpa Ribet',
         capt: 'Buat kamu yang memiliki masalah di dalam mencuci ransel ...',
         category: 'Selengkapnya',
     },
