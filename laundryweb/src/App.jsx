@@ -4,9 +4,9 @@ import {BrowserRouter  as Router, Routes, Route} from 'react-router-dom';
 import Home from './Home'
 import Blog from './Blog'
 import Layanan from './Layanan';
-import AboutUS from './AboutUS';
 import Informasi from './informasi';
 import FAQ from './FAQ';
+import TentangKami from './TentangKami';
 const App = () => {
   return (
     <Router>
@@ -17,7 +17,7 @@ const App = () => {
         <Route path='/Informasi' element={<Informasi/>}></Route>
         <Route path='/FAQ' element={<FAQ/>}></Route>
         <Route path='/Layanan' element={<Layanan/>}></Route>
-        <Route path='/AboutUs' element={<AboutUS/>}></Route>
+        <Route path='/TentangKami' element={<TentangKami/>}></Route>
       </Routes>
     </Router>
   );
