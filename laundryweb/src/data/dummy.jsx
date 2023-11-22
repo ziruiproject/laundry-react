@@ -1,6 +1,6 @@
 import {
     miniOne,
-    miniThree,
+ miniThree,
     miniTwo,
     orangSakit,
     sakitPerut,
@@ -8,7 +8,7 @@ import {
     sakitKepala,
     darahRendah,
   } from "../asset";
-  
+     
   export const navLink = [
     {
       id: "home",
