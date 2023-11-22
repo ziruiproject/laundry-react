@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import informasi1 from './assets/informasi1.png'; 
 
-const Layanan = () => {
+const Artikel1 = () => {
   return (
     <>
       <Navbar />
@@ -33,4 +33,4 @@ const Layanan = () => {
   );
 };
 
-export default Layanan;
+export default Artikel1;
