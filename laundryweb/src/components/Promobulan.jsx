@@ -8,7 +8,7 @@ import promo3 from '../assets/promo3.png';
 const Promobulan = () => {
   return (
     <div>
-      <h1 className=" justify-center text-center font-bold text-[300px]" style={{ color: 'black', fontSize: '24pt', fontWeight: 'bold', marginTop: '200px', marginBottom: '100px'}}>Dapatkan Promo Bulan Ini!</h1>
+      <h1 className=" justify-center text-center font-bold text-[300px]" style={{ color: 'black', fontSize: '24pt',  marginTop: '200px', marginBottom: '100px'}}>Dapatkan Promo Bulan Ini!</h1>
       <Carousel>
         <Carousel.Item>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
