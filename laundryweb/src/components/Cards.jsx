@@ -1,32 +1,29 @@
 import Card from 'react-bootstrap/Card';
-import toko_1 from '../assets/toko_1.png'
 import stars from '../assets/stars.png'
 
-function Cards() {
+function Cards(props) {
   return (
-    <Card style={{ width: '22rem' }}>
-      <Card.Img variant="top" src={toko_1} />
+    <Card key={props.id} style={{ width: '28rem', borderRadius: '20px', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.2)',}}>
+      <Card.Img variant="top" src={props.image} />
       <Card.Body>
-        <Card.Title><h3><b>Den Gebol</b></h3></Card.Title>
+        <Card.Title style={{display: 'flex', paddingLeft: '16px', fontSize: '24px'}}><b>{props.name}</b></Card.Title>
         <Card.Text>
-          <div>
-            <p>2.3 km | Krapyak, Bantul</p>
-            <br />
+          <div className='flex pl-4'>
+            <p>{props.locate}</p>
           </div>
-          <div className='flex justify-between'>
-            <div className='text-center'>
+          <div className='flex justify-between px-4 py-3'>
+            <div>
               <h4>Harga Mulai</h4>
-              <h5>Rp5.000</h5>
+              <h5>{props.price}</h5>
             </div>
-            <div className='text-center'>
+            <div>
               <h4>Transaksi</h4>
-              <h5>1</h5>
+              <h5>{props.transaction}</h5>
             </div>
           </div>
-          <br />
-          <div className='flex justify-end' >
+          <div className='flex justify-end'>
             <img className='w-7 h-7' src={stars} alt="" />
-            <p className='pt-1'>4.5</p>
+            <p className='pt-1'>{props.rate}</p>
           </div>
         </Card.Text>
       </Card.Body>
