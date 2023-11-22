@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { dataDigitalBestSeller } from './data/Bloginfo';
 import './informasi.css';
+import {Link} from 'react-router-dom';
 import Footer from './components/Footer';
 import Promobulan from './components/Promobulan'; 
 
@@ -61,9 +62,9 @@ function Informasi() {
             <h1>{item.title}</h1>
           </div>
           <div className='card-bottom'>
-            <h3>{item.capt}</h3>
-            <p>{item.category}</p>
-          </div>
+                <h3>{item.capt}</h3>
+                <Link to="/Artikel1">{item.category}</Link>
+              </div>
         </div>
       ))}
       </Slider>

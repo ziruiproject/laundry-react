@@ -14,7 +14,7 @@ const CustomNavbar = () => {
       { subName: "FA&Q", subLink: "/FAQ" }
     ] },
     { name: "Layanan", link: "/layanan" },
-    { name: "Tentang Kami", link: "/aboutus" },
+    { name: "Tentang Kami", link: "/tentangkami" },
   ];
 
   return (
